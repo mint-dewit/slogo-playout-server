@@ -1,0 +1,322 @@
+body {
+	margin: 0; 
+	background: #f0f0f0;
+	font-family: 'RobotoDraft';
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.clear {
+	clear: both;
+}
+
+#left-nav {
+	width: 250px; 
+	position: fixed; 
+	height: 100%; 
+	background-color: #FFF; 
+	border-right: 1px solid #eee;
+	padding-top: 60px;
+	z-index: 99;
+}
+
+.nav-list {
+	width: 100%;
+	border-bottom: 1px solid #eee;
+	list-style-type: none;
+	padding: 1em 0 1em 0;
+	margin: 0;
+}
+
+.nav-list li {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+}
+
+.nav-list li:hover {
+	background-color: #eee;
+}
+
+#top-bar {
+	width: 100%; 
+	position: fixed; 
+	height: 60px; 
+	background-color: #FFB02C;
+	font-size: 24px;
+	color: #fff;
+	line-height: 60px;
+	z-index: 99;
+}
+
+#top-bar-left-nav {
+	width: 250px; 
+	height: 100%; 
+	background-color: #FFF; 
+	border-right: 1px solid #eee; 
+	border-bottom: 1px solid #eee; 
+	padding: 2px; 
+	box-sizing: border-box;
+	float: left;
+}
+
+#top-bar .image {
+	background-image: url('http://slogo.rgl.nl/img/slogo-logo.png'); 
+	background-size: contain; 
+	background-repeat: no-repeat; 
+	width: 100%; 
+	height: 100%; 
+	display: block; 
+	background-position: center;
+}
+
+#top-bar #logout {
+	float: right;
+	height: 100%;
+	padding: 0 20px 0 70px;
+	color: #fff;
+}
+
+#top-bar #logout:hover {
+	font-weight: bold;
+}
+
+#content {
+	padding-left: 275px;
+	padding-top: 85px;
+	padding-right: 25px;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.header span {
+	background: #FFB02C; 
+	padding:15px; 
+	color:#fff; 
+	font-size:24px; 
+	float:left;
+	margin-bottom: 25px;
+}
+
+
+
+
+.list-content {
+	width: 100%;
+}
+
+.list-content .item {
+	width: 100%;
+	display: block;
+	clear: both;
+	background: #fff;
+	border-radius: 3px;
+	line-height: 40px;
+	margin-top: 3px;
+	overflow: hidden;
+}
+
+.list-content .listhead {
+	background: #E0920E;
+	color: #fff;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 12px;
+	min-height: 30px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	margin-top: 0px;
+}
+
+
+
+
+.legenda-item {
+	float: left;
+	position: relative;
+}
+
+.legenda-item .colorpart {
+	position:relative;
+	top:3px;
+	float:left;
+	width:14px;
+	height:14px;
+	margin-right:10px;
+	border-radius:3px;
+}
+
+
+
+
+
+#programma-naam {
+	width: 100%;
+	font-size: 24px;
+	line-height: 24px;
+	border: none;
+	min-height: 30px;
+	background: #f0f0f0;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#programma-naam:hover, #programma-naam:focus {
+	background: #fff;
+}
+
+
+
+
+
+.line {
+	width: 100%;
+	background: #ADADAD;
+	clear: both;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.title {
+	width: 100%;
+	background: #E0920E;
+	line-height: 16px;
+	color: #fff;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+
+
+
+.cards-wrapper {
+	width: 100%;
+}
+
+.card {
+	width: 100%;
+	background: #fff;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.card .top-bar {
+	width: 100%;
+	line-height: 30px;
+	height: 40px;
+}
+
+.card .top-bar span {
+	float: left;
+}
+
+.card .top-bar #input_number {
+	float: left;
+	display: block;
+	position: relative;
+	line-height: 30px;
+	border: none;
+	width: 50px;
+}
+
+.card .top-bar #input_title {
+	float: right;
+	display: block;
+	position: relative;
+	line-height: 30px;
+	width: calc(100% - 60px);
+	border: none;
+}
+
+.card .body {
+	border-top: solid 1px #ADADAD;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.hidden_input {
+	border: none;
+}
+
+.popup-wrap {
+	z-index: 1000;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 40px;
+	text-align: center;
+	line-height: 100%;
+	overflow: hidden;
+	display: none;
+}
+
+.popup-wrap .popup-bg {
+	z-index: 1100;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.75);
+}
+
+.popup-wrap .popup {
+	z-index: 1200;
+	position: relative;
+	margin: auto;
+	max-width: 1170px;
+	vertical-align: middle;
+	line-height: 1em;
+	text-align: left;
+	font-size: 16px;
+	border-radius: 3px;
+	background: #EEE;
+}
+
+.popup .popup-head {
+	position: relative;
+	padding: 0px 15px;
+	height: 40px;
+	line-height: 40px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.popup-head h3 {
+	display: inline-block;
+	float: left;
+	padding-right: 40px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #FFB02C;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 5px;
+}
+
+.popup-head .popup-close {
+	position: absolute;
+	top: 2px;
+	right: 15px;
+	float: right;
+	line-height: 40px;
+}
+
+.popup .popup-content {
+	position: absolute;
+	top: 40px;
+	bottom: 0px;
+	padding: 30px;
+	overflow: auto;
+	width: 100%;
+	box-sizing: border-box;
+}
